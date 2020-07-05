@@ -1,0 +1,30 @@
+{
+  "name": "api-express",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "nodemonConfig": {
+    "ignore": [
+      "test/*",
+      "docs/*"
+    ]
+  },
+  "scripts": {
+    "serve": "nodemon ./index.js localhost 8080",
+    "inspect": "nodemon --inspect ./index.js 80"
+  },
+  "author": "https://github.com/DosSantosCarlos",
+  "license": "ISC",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "nodemon": "^2.0.4",
+    "pg": "^8.2.1",
+    "sequelize": "^6.3.0",
+    "sqlite3": "^5.0.0"
+  },
+  "devDependencies": {
+    "sequelize-cli": "^6.1.0"
+  }
+}
