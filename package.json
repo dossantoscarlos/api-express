@@ -10,8 +10,8 @@
     ]
   },
   "scripts": {
-    "serve": "nodemon ./index.js localhost 8080",
-    "inspect": "nodemon --inspect ./index.js 80"
+    "serve": "nodemon ./serve.js localhost 8080",
+    "inspect": "nodemon --inspect ./serve.js 80"
   },
   "author": "https://github.com/DosSantosCarlos",
   "license": "ISC",
