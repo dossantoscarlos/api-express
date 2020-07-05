@@ -1,11 +1,14 @@
 module.exports = {
-    dialect : 'sqlite',
+    dialect : 'sqlite', // sqlite or postgres
     host:'localhost',
     username:'root',
     password:'',
-    storage:'../database/db.sqlite',
+    database:'',
+    storage:'../database/dbsqlite.sqlite', //for sqlite
+    logging:false,
     define:{
         timestamps:true,
-        underscored: true
+        underscored: true,
+        underscoredAll:true
     }
 }

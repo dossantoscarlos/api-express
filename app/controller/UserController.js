@@ -1,4 +1,4 @@
-const User = require("../models/User")
+ const { User } = require("../models")
 
 module.exports = {
     async index(req,res) {
@@ -13,13 +13,9 @@ module.exports = {
     },
     async store(req, res) {
         try{
-        const { first_name, last_name, email }  = req.body
- const user = await User.create({
-            first_name,
-            last_name,
-            email
-        })
-         return res.json(user)
+            const {password, name, email }  = req.body
+            const user = await User.create({ name,password,email})
+            return res.json(user)
         }catch(error){
             console.log(error)
             return res.json(error.parent.code)
