@@ -3,10 +3,14 @@
     <p>Tecnologias:</p>
     <p>
         <ul>
-            <li>Express framework</li>
-            <li>Sequileze orm</li>
             <li>Cors</li>
-        </ul> 
-        
+            <li>dotenv</li>
+            <li>express</li>
+            <li>jose </li>
+            <li>>nodemon</li>
+            <li>postgres => pg </li>
+            <li>sequelize</li>
+            <li>sqlite3</li>
+        </ul>
     </p>
 </div>
