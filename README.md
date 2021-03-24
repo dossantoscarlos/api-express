@@ -7,7 +7,7 @@
             <li>dotenv</li>
             <li>express</li>
             <li>jose </li>
-            <li>>nodemon</li>
+            <li>nodemon</li>
             <li>postgres => pg </li>
             <li>sequelize</li>
             <li>sqlite3</li>
