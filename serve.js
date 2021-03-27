@@ -1,5 +1,5 @@
 const App = require(`./src/app`)
 
-App.listen(process.env.PORT || '8080', () => {
-    console.log("Serve listen Port 8080")
+App.listen(process.env.PORT || '8000', () => {
+    console.log("http://localhost:8000/users")
 })

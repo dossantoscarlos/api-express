@@ -1,9 +1,11 @@
 const routes = require(`express`).Router()
-const UserConstroller = require ('../app/controller/UserController')
+const UserController = require ('../app/controller/UserController')
+const LoginController  =  require('../app/controller/LoginController')
 
-routes.get('/users', UserConstroller.index)
-routes.post('/users', UserConstroller.store)
 
-// const { User } = require('../app/models')
-// User.findAll().then(resp => console.log(resp)).catch(error => console.log())
+routes.get('/users', UserController.index)
+routes.post('/users', UserController.store)
+
+routes.post('/login',LoginController.auth)
+
 module.exports = routes
